@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Venta de Flores - Flores Frescas y Hermosas",
-    description: "Compra flores frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
-    keywords: "flores, venta de flores, flores frescas, girasoles, rosas, ramo de flores, flores para regalar",
+    title: "Venta de Flores Eternas - Flores Frescas y Hermosas",
+    description: "Compra flores eternas, frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
+    keywords: "flores eternas, venta de flores, flores frescas, girasoles, rosas, ramo de flores, flores para regalar",
     openGraph: {
-        title: "Venta de Flores - Flores Frescas y Hermosas",
-        description: "Compra flores frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
+        title: "Venta de Flores Eternas - Flores Frescas y Hermosas",
+        description: "Compra flores eternas, frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
         url: "https://details-izamar.vercel.app", // URL de tu sitio web
-        siteName: "Tu Tienda de Flores",
+        siteName: "Tu Tienda de Flores Eternas",
         images: [
             {
                 url: "/imgs/Ramo con girasol.jpeg", // Imagen representativa del sitio
@@ -35,10 +35,11 @@ export const metadata: Metadata = {
     twitter: {
         card: "summary_large_image",
         site: "@TuTiendaDeFlores",
-        title: "Venta de Flores - Flores Frescas y Hermosas",
-        description: "Compra flores frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
+        title: "Venta de Flores Eternas - Flores Frescas y Hermosas",
+        description: "Compra flores eternas, frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
     },
 };
+
 
 
 export default function RootLayout({
