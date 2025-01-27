@@ -1,8 +1,14 @@
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Button } from "@/components/ui/button"
 import Image from "next/image";
+import {CartItem} from "@/app/page";
 
-export default function Cart({ cart, addToCart, removeFromCart }) {
+interface CartProps {
+    cart: CartItem[]
+    addToCart: (flower:CartItem) => void
+    removeFromCart: (flowerId: number) => void
+}
+export default function Cart({ cart, addToCart, removeFromCart }:CartProps) {
   return (
     <div className="w-full sm:w-2/3 mb-4 sm:mb-0">
       <h2 className="text-xl font-bold text-purple-700 mb-2">Carrito de Compras</h2>

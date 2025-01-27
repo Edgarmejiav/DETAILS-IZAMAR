@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button"
+import {CartItem} from "@/app/page";
 
-export default function WhatsAppButton({ cart, total }) {
+interface WhatsAppButtonProps {
+    cart: CartItem[]
+    total: number
+}
+export default function WhatsAppButton({ cart, total }:WhatsAppButtonProps) {
   const phoneNumber = "+51937773865" // Reemplaza con tu número de WhatsApp
 
   const createWhatsAppMessage = () => {

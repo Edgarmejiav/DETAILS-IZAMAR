@@ -1,8 +1,16 @@
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import {CartItem, Flower} from "@/app/page";
 
-export default function ProductList({ flowers, addToCart, removeFromCart, cart }) {
-  const getItemQuantity = (flowerId) => {
+interface ProductListProps {
+    flowers: Flower[]
+    addToCart: (flower: Flower) => void
+    removeFromCart: (flowerId: number) => void
+    cart: CartItem[]
+}
+
+export default function ProductList({ flowers, addToCart, removeFromCart, cart }: ProductListProps) {
+  const getItemQuantity = (flowerId:number) => {
     const item = cart.find((item) => item.id === flowerId)
     return item ? item.quantity : 0
   }

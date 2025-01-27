@@ -5,7 +5,15 @@ import ProductList from "./components/ProductList"
 import Cart from "./components/Cart"
 import WhatsAppButton from "./components/WhatsAppButton"
 
-const flowers = [
+export interface Flower {
+    id: number;
+    name: string;
+    description: string;
+    price: number;
+}
+
+export interface CartItem { id: number; name: string; price: number; quantity: number }
+const flowers :Flower[]= [
   { id: 1, name: "Girasol con 2 rositas", description: "Girasol acompañado de dos rositas", price: 25 },
   { id: 2, name: "Mini ramo rojo", description: "Pequeño ramo con rosas rojas", price: 25 },
   { id: 3, name: "Flor corazon", description: "Flor en forma de corazón", price: 25 },
@@ -20,15 +28,15 @@ const flowers = [
 
 
 export default function Home() {
-  const [cart, setCart] = useState([])
-  const [total, setTotal] = useState(0)
+  const [cart, setCart] = useState<CartItem[]>([]);
+  const [total, setTotal] = useState(0);
 
   useEffect(() => {
     const newTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0)
     setTotal(newTotal)
   }, [cart])
 
-  const addToCart = (flower) => {
+  const addToCart = (flower:CartItem| Flower) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === flower.id)
       if (existingItem) {
@@ -39,7 +47,7 @@ export default function Home() {
     })
   }
 
-  const removeFromCart = (flowerId) => {
+  const removeFromCart = (flowerId: number) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((item) => item.id === flowerId)
       if (existingItem && existingItem.quantity > 1) {
