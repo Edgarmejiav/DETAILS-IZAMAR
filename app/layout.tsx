@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Venta de Flores - Flores Frescas y Hermosas",
         description: "Compra flores frescas y hermosas online. Encuentra girasoles, rosas y más para regalar en ocasiones especiales.",
-        url: "https://www.tutiendadeflores.com", // URL de tu sitio web
+        url: "https://details-izamar.vercel.app", // URL de tu sitio web
         siteName: "Tu Tienda de Flores",
         images: [
             {
-                url: "/imgs/Adorno para carro.jpeg", // Imagen representativa del sitio
+                url: "/imgs/Ramo con girasol.jpeg", // Imagen representativa del sitio
                 width: 800,
                 height: 600,
                 alt: "Flores frescas y hermosas"
