@@ -5,15 +5,15 @@ import {CartItem, Flower} from "@/app/page";
 interface ProductListProps {
     flowers: Flower[]
     addToCart: (flower: Flower) => void
-    removeFromCart: (flowerId: number) => void
-    cart: CartItem[]
+    removeFromCart?: (flowerId: number) => void
+    cart?: CartItem[]
 }
 
-export default function ProductList({flowers, addToCart, removeFromCart, cart}: ProductListProps) {
-    const getItemQuantity = (flowerId: number) => {
-        const item = cart.find((item) => item.id === flowerId)
-        return item ? item.quantity : 0
-    }
+export default function ProductList({flowers, addToCart}: ProductListProps) {
+    // const getItemQuantity = (flowerId: number) => {
+    //     const item = cart.find((item) => item.id === flowerId)
+    //     return item ? item.quantity : 0
+    // }
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
