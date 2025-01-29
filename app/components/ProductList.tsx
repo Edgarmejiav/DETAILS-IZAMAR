@@ -16,7 +16,7 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
     // }
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className=" lg:mx-52 grid grid-cols-1 sm:grid-cols-3 gap-6">
             {flowers.map((flower) => (
                 <div
                     key={flower.id}
