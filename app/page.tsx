@@ -65,8 +65,8 @@ export default function Home() {
     }
 
     return (
-        <main className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 pb-32">
-            <div className="container mx-auto px-4 py-12">
+        <main className="min-h-screen container bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 pb-32">
+            <div className=" mx-auto px-4 py-12">
                 <header className="text-center">
                     <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 md:mb-12 text-purple-700 animate-pulse whitespace-nowrap overflow-hidden">
                         LITTLES DETAILS IZAMAR
@@ -74,9 +74,9 @@ export default function Home() {
                 </header>
                 <ProductList flowers={flowers} addToCart={addToCart} removeFromCart={removeFromCart} cart={cart}/>
             </div>
-            <div className="fixed bottom-0 left-0 right-0 bg-white shadow-lg">
+            <div className=" rounded-md fixed bottom-0 left-0 right-0 bg-white shadow-lg">
                 <div
-                    className="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
+                    className=" md:mx-52  md:gap-10  px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
                     <Cart cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}/>
                     <WhatsAppButton cart={cart} total={total}/>
                 </div>
