@@ -20,10 +20,10 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
             {flowers.map((flower) => (
                 <div
                     key={flower.id}
-                    className="border-2 border-pink-300 p-4 rounded-lg shadow-lg
+                    className="  p-2 rounded-lg shadow-lg
                   transition-all duration-300"
                 >
-                    <div className="relative h-36 sm:h-64 mb-4 overflow-hidden rounded-md">
+                    <div className="relative h-36 sm:h-64 mb-2 overflow-hidden rounded-md">
                         <Image
                             src={`/imgs/${flower.name}.jpeg`}
                             alt={flower.name}
@@ -35,7 +35,7 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
                     </div>
                     <h2 className=" text-sm
                      sm:text-2xl font-bold text-black mb-2 truncate">{flower.name}</h2>
-                    <div className="flex justify-center gap-3 flex-row ">
+                    <div className=" mb-2 flex justify-center gap-3 flex-row ">
                         <div className="text-xs sm:text-xl font-bold text-gray-400  line-through">
                             S/ {(flower.price + 5).toFixed(2)}
                         </div>
