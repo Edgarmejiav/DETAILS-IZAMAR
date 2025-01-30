@@ -66,7 +66,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen container ">
-            <div className="  mx-auto px-4 py-4 mt-4 ">
+            <div className=" text-purple-800  mx-auto px-4 py-4 mt-4 ">
                 <header className=" md:mx-52  flex flex-row center gap-3">
                     <div className=" flex flex-col justify-center items-center gap-1">
                         <div className="w-4 h-0.5 bg-purple-700"/>
@@ -86,7 +86,7 @@ export default function Home() {
             <div className=" rounded-md fixed bottom-0 left-0 right-0 bg-white shadow-lg">
                 <div
                     className=" md:mx-52  md:gap-10  px-4 py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center">
-                    <Cart cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}/>
+                    {cart.length > 0 && <Cart cart={cart} addToCart={addToCart} removeFromCart={removeFromCart}/>}
                     <WhatsAppButton cart={cart} total={total}/>
                 </div>
             </div>
