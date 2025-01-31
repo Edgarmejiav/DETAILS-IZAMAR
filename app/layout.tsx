@@ -49,11 +49,23 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
+    <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    >
+    <div className=" sticky  top-0 h-14 z-20 bg-white flex  items-center  text-purple-800   px-4  py-4 ">
+        <header className=" md:mx-52  flex flex-row center gap-3">
+            <div className=" flex flex-col justify-center items-center gap-1">
+                <div className="w-4 h-0.5 bg-purple-700"/>
+                <div className="w-4 h-0.5 bg-purple-700"/>
+                <div className="w-4 h-0.5 bg-purple-700"/>
+            </div>
+            <div className=" text-sm font-bold">
+                LITTLES DETAILS IZAMAR
+            </div>
+        </header>
+    </div>
         {children}
-      </body>
+    </body>
     </html>
-  );
+);
 }

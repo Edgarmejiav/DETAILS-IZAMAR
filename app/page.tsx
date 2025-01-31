@@ -96,18 +96,8 @@ export default function Home() {
     }
     return (
         <main className="min-h-screen container ">
-            <div className=" text-purple-800  mx-auto px-4 py-4 mt-4 ">
-                <header className=" md:mx-52  flex flex-row center gap-3">
-                    <div className=" flex flex-col justify-center items-center gap-1">
-                        <div className="w-4 h-0.5 bg-purple-700"/>
-                        <div className="w-4 h-0.5 bg-purple-700"/>
-                        <div className="w-4 h-0.5 bg-purple-700"/>
-                    </div>
-                    <div className=" text-sm font-bold">
-                        LITTLES DETAILS IZAMAR
-                    </div>
-                </header>
-                <h2 className="my-4 ml-1  sm:text-center">
+            <div className=" text-purple-800  mx-auto px-4   ">
+                <h2 className="lg:mx-52  mb-3">
                     Catálogo de flores
                 </h2>
                 <div className="lg:mx-52  flex flex-row gap-2 mb-3 overflow-x-auto">
