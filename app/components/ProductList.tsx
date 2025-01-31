@@ -23,7 +23,7 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
                     className="  p-2 rounded-lg shadow-lg
                   transition-all duration-300"
                 >
-                    <div className="relative h-36 sm:h-64 mb-2 overflow-hidden rounded-md">
+                    <div className="relative h-36 sm:h-64 mb-1 overflow-hidden rounded-md">
                         <Image
                             src={`/imgs/${flower.name}.jpeg`}
                             alt={flower.name}
@@ -34,12 +34,12 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
                         />
                     </div>
                     <h2 className=" text-sm
-                     sm:text-2xl font-bold text-black mb-2 truncate">{flower.name}</h2>
-                    <div className=" mb-2 flex justify-center gap-3 flex-row ">
+                     sm:text-xl font-bold text-black  truncate">{flower.name}</h2>
+                    <div className=" mb-1 flex justify-center items-center gap-3 flex-row ">
                         <div className="text-xs sm:text-xl font-bold text-gray-500  line-through">
                             S/ {(flower.price + 5).toFixed(2)}
                         </div>
-                        <div className=" text-sm sm:text-2xl font-bold text-[#E10714] ">
+                        <div className=" text-sm sm:text-xl font-bold text-[#E10714] ">
                             S/ {flower.price.toFixed(2)}
                         </div>
                     </div>
