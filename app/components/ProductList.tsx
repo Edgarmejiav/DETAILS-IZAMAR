@@ -45,8 +45,7 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
                     </div>
                     <Button
                         onClick={() => addToCart(flower)}
-                        className="w-full  bg-gradient-to-r from-green-400 to-blue-500
-             hover:from-green-500 hover:to-blue-600
+                        className="w-full  bg-purple-900 hover:bg-purple-800
              text-white font-bold py-2 px-4 rounded-md text-xs sm:text-base
              transition-all duration-300 flex items-center justify-center
             gap-2"
