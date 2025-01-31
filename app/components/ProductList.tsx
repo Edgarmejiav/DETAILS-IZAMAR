@@ -36,7 +36,7 @@ export default function ProductList({flowers, addToCart}: ProductListProps) {
                     <h2 className=" text-sm
                      sm:text-2xl font-bold text-black mb-2 truncate">{flower.name}</h2>
                     <div className=" mb-2 flex justify-center gap-3 flex-row ">
-                        <div className="text-xs sm:text-xl font-bold text-gray-400  line-through">
+                        <div className="text-xs sm:text-xl font-bold text-gray-500  line-through">
                             S/ {(flower.price + 5).toFixed(2)}
                         </div>
                         <div className=" text-sm sm:text-2xl font-bold text-[#E10714] ">
