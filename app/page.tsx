@@ -29,7 +29,12 @@ const flowers: Flower[] = [
     {id: 7, name: "Ramo con girasol", description: "Ramo que incluye un girasol", price: 35},
     {id: 8, name: "Girasol individual", description: "Girasol individual", price: 18},
     {id: 9, name: "Flor individual amarilla", description: "Flor amarilla individual", price: 8},
-    {id: 10, name: "Adorno para carro", description: "Adorno decorativo para carro", price: 20}
+    {id: 10, name: "Adorno para carro", description: "Adorno decorativo para carro", price: 20},
+    {id: 10, name: "Adorno para carro U", description: "Adorno decorativo para carro", price: 20},
+    {id: 10, name: "Adorno para carro AL", description: "Adorno decorativo para carro", price: 20},
+    {id: 10, name: "Adorno para carro SC", description: "Adorno decorativo para carro", price: 20},
+    {id: 10, name: "Adorno para carro GIRASOL", description: "Adorno decorativo para carro", price: 20},
+
 ];
 
 
