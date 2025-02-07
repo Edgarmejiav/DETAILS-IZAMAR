@@ -53,6 +53,12 @@ const flowersAll: Flower[] = [
         description: "Adorno decorativo para carro",
         price: 20,
         category: "Adorno"
+    }, {
+        id: 15,
+        name: "Ramo color chicle",
+        description: "Ramo color chicle",
+        price: 35,
+        category: "Ramo"
     },
 ];
 
