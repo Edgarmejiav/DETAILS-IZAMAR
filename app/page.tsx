@@ -59,6 +59,18 @@ const flowersAll: Flower[] = [
         description: "Ramo color chicle",
         price: 35,
         category: "Ramo"
+    }, {
+        id: 16,
+        name: "Ramo lila",
+        description: "Ramo color lila",
+        price: 35,
+        category: "Ramo"
+    }, {
+        id: 17,
+        name: "Ramo azul",
+        description: "Ramo azul",
+        price: 25,
+        category: "Ramo"
     },
 ];
 
