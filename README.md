@@ -50,7 +50,7 @@ Aplicación web de comercio electrónico para la venta de flores eternas, rosas,
 
 ## 📦 Instalación
 
-### Prerequisitos
+### Prerrequisitos
 
 - Node.js 20.x o superior
 - npm, yarn, pnpm o bun
